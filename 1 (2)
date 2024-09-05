@@ -1,0 +1,24 @@
+//: Write a program to concatenate two strings without using the built-in function.Input: "hello", "world"
+#include<bits/stdc++.h>
+using namespace std;
+void concatenate(string first, string second){
+    
+    int i=0;int j=second.size();
+    while(i<=j){
+        first.push_back(second[i]);
+        i++;
+    }
+    for(auto it: first){
+        cout<<it;
+    }
+    
+}
+
+
+
+int main(){
+    string first="Hello",second="World!";
+    
+   
+   concatenate(first,second);
+}
